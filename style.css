@@ -1,6 +1,85 @@
-body {
-    background-color: black;
-    text-align: center;
-    color: red;
+.container {
+    background-color: #f3d9e5;
+    height: 100vh; /*fundo com 100% da tela do usuário*/
     
+    display: flex; /*alinhar do lado + te permite usar o justify-content e o flex-direction e align-items*/
+    align-items: center; 
+    flex-direction: column ; /*alinha horizontalmente*/
+  
+    gap: 3rem; /*afasta os elementos entre si*/
+    padding-top: 3rem;
+    
+}
+
+.container h1 {
+    font-family: "Inter", serif;
+    color: #4a3267;
+    font-weight: 700;
+}
+
+.timer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+
+    font-family: "Oxanium", serif;
+    color: #de638a;
+    font-size: 120px;
+    font-weight: bold;
+}
+
+.separator {
+    padding: 0 25px;
+    align-items: center;
+
+    font-family: "Oxanium", serif;
+    
+    color: #f7b9c4;
+}
+   
+#milliseconds {
+    font-family: "Oxanium", serif;
+    color: #de638a;
+    font-size: 60px;        
+    font-weight: bold;
+}
+    
+.buttons {
+    display: flex;
+    gap: 1rem;
+}
+
+.btn {
+    padding: 8px 16px;
+    border-radius: 12px;
+    border: 2px;
+    
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+    
+    font-family: "Roboto", serif;
+    color: #4a3267;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.btn:hover {
+    transform: scale(1.1);
+}
+
+#startBtn {
+    background-color: #4a3267;
+    color: #c6bade;
+}
+
+#pauseBtn, 
+#resumeBtn {
+    display: none; /*pra não aparecerem de início*/
+
+    background-color: #c6bade;
+}
+
+#resetBtn {
+    background-color: #c6bade;
 }
